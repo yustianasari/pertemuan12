@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float angka [5][2];
+    float jumlahjarak, jumlahwaktu, kec;
+
+    jumlahjarak = 0;
+    jumlahwaktu = 0;
+
+    for (int baris =0; baris <5; baris++)
+    {
+        for (int kolom =0; kolom<2; kolom++) {
+            if (kolom == 0)
+                {cout << "Jarak " << baris << "= ";
+            cin >> angka [baris] [kolom];
+            jumlahjarak = jumlahjarak + angka [baris] [kolom];}
+
+            else
+            {cout << "Waktu " << baris << "= ";
+            cin >> angka [baris] [kolom];
+            jumlahwaktu = jumlahwaktu + angka [baris] [kolom];}}
+            cout << endl;
+        }
+        cout << endl;
+
+        cout << "Jumlah Jarak = " <<jumlahjarak << endl;
+        cout << "Jumlah Waktu = " <<jumlahwaktu << endl;
+
+        kec = jumlahjarak/jumlahwaktu;
+        cout << "Kecepatan rata-rata = " << kec << endl;
+
+
+    return 0;
+}
