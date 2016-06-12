@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int ANGKA[2][2];
+    int baris, kolom;
+    for (baris = 0; baris<=2; baris++){
+        for (kolom=0; kolom<=2; kolom++){
+            cout<<"ANGKA["<<baris<<"]["<<kolom<<"] = ";
+            cin>>ANGKA[baris][kolom];
+        }
+    }
+    
+    cout<<ANGKA[0][1]<<endl;
+}
